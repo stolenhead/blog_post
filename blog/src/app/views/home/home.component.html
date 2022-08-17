@@ -1,0 +1,8 @@
+<section>
+    <div></div>
+    <div>
+        <div *ngFor="let post of posts ;index as i" (click)="goToPost(post.id)">
+            <app-posts [post]="post"></app-posts>
+        </div>
+    </div>
+</section>
